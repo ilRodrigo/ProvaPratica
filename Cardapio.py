@@ -7,15 +7,15 @@ class ItemCardapio(ABC):
 
 class PratoPrincipal(ItemCardapio):
     def preparar(self, nome, preco):
-        return (f"Nome: {nome}, Preço: {preco}")
+        return (f"Prato Principal: {nome}, Preço: {preco}")
     
 class Sobremesa(ItemCardapio):
     def preparar(self, nome, preco):
-        return (f"Nome: {nome}, Preço: {preco}")
+        return (f"Sobremesa: {nome}, Preço: {preco}")
     
 class Bebida(ItemCardapio):
     def preparar(self, nome, preco):
-        return (f"Nome: {nome}, Preço: {preco}")
+        return (f"Bebida: {nome}, Preço: {preco}")
     
 class CriadorDeItem(ABC):
     @abstractmethod
